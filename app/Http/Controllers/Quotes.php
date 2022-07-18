@@ -80,7 +80,7 @@ class Quotes extends Controller
 
     public function getFinalQuotes(){
         $data = self::random();
-        $bg = collect(["cover.jpg","bg.jpg","bg1.jpg","bg2.jpg","bg3.jpg","bg4.jpg"])->random(1);
+        $bg = collect(["cover.webp","bg.webp","bg1.webp","bg2.webp","bg3.webp","bg4.webp"])->random(1);
         $dumpData = [
             "anime" => str_replace("_"," ",$data[0]),
             "quotes" => self::getQuotes($data[0]),
