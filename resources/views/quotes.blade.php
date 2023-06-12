@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>JrWeb | Random Anime Facts</title>
+    <title>JrWeb | Random Anime Quotes</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&amp;display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&amp;display=swap" media="print" onload="this.media='all'"/>
@@ -21,7 +21,7 @@
         <div class="cover-container text-left">
             <div class="masthead clearfix">
                 <div class="inner">
-                    <h3 class="masthead-brand">Anime Facts</h3>
+                    <h3 class="masthead-brand">Anime Quotes</h3>
                     <nav class="nav nav-masthead">
                         <a class="nav-link nav-social" href="#" title="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
                         <a class="nav-link nav-social" href="#" title="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
@@ -31,16 +31,19 @@
                 </div>
             </div>
             <div class="container">
-                <div class="row">
-                    <div class="col">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-6 mb-5 mt-5 text-center d-inline-block d-lg-none">
+                        <img class="img-fluid" width="250px" src={{$img}}>
+                    </div>
+                    <div class="col-12 col-lg-6 text-center text-lg-left">
                         <div class="inner cover">
                             <h1 class="cover-heading">{{$anime}}</h1>
                             <p class="lead cover-copy">{{$quotes}}</p>
                             <p class="lead"><button type="button" class="btn btn-lg btn-default btn-notify" onclick="window.location.reload();" >Refresh</button></p>
                         </div>
                     </div>
-                    <div class="col">
-                        <img style="width:65%" src={{$img}}>
+                    <div class="col-12 col-lg-6 text-center d-none d-lg-inline-block">
+                        <img class="img-fluid" width="370px" src={{$img}}>
                     </div>
                 </div>
             </div>
